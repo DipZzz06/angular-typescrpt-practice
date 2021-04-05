@@ -15,10 +15,11 @@ export class AppComponent {
   Employee: Dipika = { id: 101, name: "dipika" };
 
   findPairsOfSum() {
-    const arr = [2, 3, 3, 4, 5, 1,3];
+    const arr = [2, 3, 3, 4, 5, 1, 3];
+
     let _arr = new Array<number>();
-    let sum = 10;
-    let flag :boolean = false;
+    let sum = 6;
+    let flag: boolean = false;
     arr.forEach(x => {
       let rem = sum - x;
       if (_arr.find(y => y == rem)) {
@@ -27,8 +28,8 @@ export class AppComponent {
       }
       _arr.push(x);
     });
-    if(!flag){
-       console.log("No Pairs found ");
+    if (!flag) {
+      console.log("No Pairs found ");
     }
   }
 }
